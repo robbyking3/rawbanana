@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width">
+
+		<!-- build:css({app,.tmp}) /css/main.css -->
+		
+		<style> [data-sr] { visibility: hidden; } </style>
+		<!-- keep this to reduce flash -->
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- endbuild -->
+
+
+	</head>
+	<body>
+
+	<nav>
+		<a href="#journey">journey</a>
+		<a href="#engagement">engagement</a>
+		<a href="#wedding">wedding</a>
+		<a href="#registry">registry</a>
+		<div class="open-nav"></div>
+	</nav>
+
+	<div class="parallax" id="my-container">
+
+	  {{ content }}
+
+	</div>
+
+	<!-- bower:js -->
+	<script src="../_bower_components/jquery/dist/jquery.js"></script>
+	<script src="../_bower_components/qunit/qunit/qunit.js"></script>
+	<script src="../_bower_components/bigtext/dist/bigtext.js"></script>
+	<script src="../_bower_components/scroll-reveal/dist/scrollReveal.js"></script>
+	<script src="../_bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
+	<!-- endbower -->
+	
+	<!-- build:js(app) /js/scripts.js -->
+	<script src="/js/main.js"></script>
+	<!-- endbuild -->
+	</body>
+</html>

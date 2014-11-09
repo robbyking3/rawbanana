@@ -1,0 +1,22 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #000;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+  overflow: hidden;
+}

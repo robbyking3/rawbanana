@@ -1,0 +1,46 @@
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+h1 {
+	font-size: 5rem;
+	color: #fff;
+}
+
+.title-heavy {
+	font-family: Helvetica;
+	font-weight: 900;
+}
+.title-light {
+	font-family: Helvetica;
+	font-weight: 100;
+}
+
+
+.callout {
+	width: 100%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+@media screen and (min-width: $screen-md-min) {
+
+	.callout {
+		width: 50%;
+	}
+
+}
+
+
+.content {
+	font-size: 1rem;
+	color: #fff;
+	text-align: left;
+	width:auto; 
+	overflow-x: auto;
+	overflow-y: none;
+}

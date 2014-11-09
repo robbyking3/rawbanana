@@ -1,0 +1,118 @@
+// --------------------------------
+// Header and Navigation
+// --------------------------------
+
+nav {
+  position: fixed;
+  padding: 5px 10px;
+  left:20px;
+  right:20px;
+  z-index: 9999;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgba(#000,0.75);
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(calc(-100% + 57px));
+
+  @media screen and (min-width: $screen-md-min) {
+    flex-direction: row;
+    transform: translateY(0);
+    background-color: transparent;
+  }
+
+  justify-content: center;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  a {
+
+    flex:1;
+    padding: 10px;
+    margin-bottom:-2px;
+    
+    white-space: wrap;
+    border:2px solid #fff;
+    color:#fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-collapse: collapse;
+    letter-spacing: 0.3em;
+
+    @media screen and (min-width: $screen-md-min) {
+      flex: none;
+      display: block;
+      top: 60px;
+      margin-left:-2px;
+      margin-bottom: 0;
+      padding:10px 22px;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: rgba(#fff,0.3);
+    }
+
+  @media screen and (min-width: $screen-md-min) {
+    &:first-of-type {
+      border-radius: 5px 0 0 5px;
+      margin-left:0;
+    }
+    &:last-of-type {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  }
+}
+
+
+// 
+// Mobile Menu Open
+// 
+$m-menu-color: #fff;
+$m-menu-color-hover: #fff;
+.open-nav {
+  position:relative;
+  margin-top:15px;
+  margin-bottom: 5px;
+  width: 42px;
+  cursor: pointer;
+  padding:8px;
+  border: 2px solid #fff;
+
+  &:after,
+  &:before {
+    content:"";
+    position: relative;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-bottom: 3px solid $m-menu-color;
+  }
+  &:before {
+    border-top: 3px solid $m-menu-color;
+  }
+  &:hover {
+    background-color: rgba(#fff,0.3);
+    &:after,
+    &:before {
+      border-color: $m-menu-color-hover;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-md-min) {
+  .open-nav {
+    display: none;
+  }
+}
+
+.logo {
+  margin: 0 auto auto auto; 
+}

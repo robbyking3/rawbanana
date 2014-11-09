@@ -1,0 +1,12 @@
+{
+  "name": "rawbanana",
+  "version": "0.0.0",
+  "dependencies": {
+    "bigtext": "~0.1.6",
+    "scroll-reveal": "~2.0.2",
+    "jquery.scrollTo": "~1.4.13"
+  },
+  "resolutions": {
+    "jquery": "~2.1.1"
+  }
+}
