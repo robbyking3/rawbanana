@@ -1,32 +1,34 @@
+/*global $:false */
+
 $(function() {
 	// Create Sweet Typeography Elements
-	$(".intro-text").bigtext();
+	$('.intro-text').bigtext();
 
 	// Open Mobile menu
-	$(".open-nav").on("click", function() {
-		$("nav").toggleClass("active");
+	$('.open-nav').on('click', function() {
+		$('nav').toggleClass('active');
 	});
 	// Set nav elements to active
-	$("nav a").on("click", function() {
-		$("nav a").removeClass("active");
-		$(this).addClass("active");
+	$('nav a').on('click', function() {
+		$('nav a').removeClass('active');
+		$(this).addClass('active');
 		// change the nav theme when over light items
-		if($(this).attr('href') == "#wedding") {
-			$("nav").addClass("dark");
+		if($(this).attr('href') === '#wedding') {
+			$('nav').addClass('dark');
 		} else {
-			$("nav").removeClass("dark");
+			$('nav').removeClass('dark');
 		}
 	});
 
-	if(window.location.hash == "#wedding") {
-		$("nav").addClass("dark");
+	if(window.location.hash === '#wedding') {
+		$('nav').addClass('dark');
 	}
 
 	$.localScroll({
 	   target:'#my-container',
 	   duration: 200,
 	   onBefore: function(){
-		$("nav").removeClass("active");
+		$('nav').removeClass('active');
 	   }
 	});
 
