@@ -316,29 +316,29 @@ module.exports = function (grunt) {
         }
       }
     },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc',
-        force: true,
-        reporter: require('jshint-stylish')
-      },
-      all: [
-        'Gruntfile.js',
-        '<%= yeoman.app %>/js/**/*.js',
-        'test/spec/**/*.js'
-      ]
-    },
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      check: {
-        src: [
-          '<%= yeoman.app %>/css/**/*.css',
-          '<%= yeoman.app %>/_scss/**/*.scss'
-        ]
-      }
-    },
+    // jshint: {
+    //   options: {
+    //     jshintrc: '.jshintrc',
+    //     force: true,
+    //     reporter: require('jshint-stylish')
+    //   },
+    //   all: [
+    //     'Gruntfile.js',
+    //     '<%= yeoman.app %>/js/**/*.js',
+    //     'test/spec/**/*.js'
+    //   ]
+    // },
+    // csslint: {
+    //   options: {
+    //     csslintrc: '.csslintrc'
+    //   },
+    //   check: {
+    //     src: [
+    //       '<%= yeoman.app %>/css/**/*.css',
+    //       '<%= yeoman.app %>/_scss/**/*.scss'
+    //     ]
+    //   }
+    // },
     concurrent: {
       server: [
         'sass:server',
@@ -384,9 +384,9 @@ module.exports = function (grunt) {
   grunt.registerTask('check', [
     'clean:server',
     'jekyll:check',
-    'sass:server',
-    'jshint:all',
-    'csslint:check'
+    'sass:server'
+    // 'jshint:all',
+    // 'csslint:check'
   ]);
 
   grunt.registerTask('build', [
