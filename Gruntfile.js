@@ -307,12 +307,14 @@ module.exports = function (grunt) {
       }
     },
     buildcontrol: {
-      dist: {
+      pages: {
         options: {
-          remote: '../',
+          dir: 'dist',
+          remote: 'git@github.com:robbyking3/rawbanana.git',
           branch: 'gh-pages',
           commit: true,
-          push: true
+          push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
         }
       }
     },
