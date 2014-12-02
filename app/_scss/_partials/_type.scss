@@ -36,12 +36,74 @@ h1 {
 
 }
 
+// .callout-wrap {
+// 	background-color: rgba(#000, 0.6);
+// 	padding: 10px;
+// }
+
 
 .content {
-	font-size: 1rem;
+	font-family: Garamond;
+	margin:auto;
+	font-size: 1.4rem;
 	color: #fff;
 	text-align: left;
-	width:auto; 
-	overflow-x: auto;
-	overflow-y: none;
+	width:70%;
+	line-height: 1.75;
+	p:first-child {
+		margin-top:0;
+	}
 }
+.columns {
+	columns: 2;
+	column-gap: 2.25em;
+}
+
+
+//Quotes
+blockquote {
+	font-family: Garamond;
+	font-style: italic;
+	font-size: 1.8rem;
+	text-align: center;
+
+	quotes: "\201C""\201D""\2018""\2019";
+
+	&:before,
+	&:after {
+		content: open-quote;
+		position:absolute;
+		font-size:  30px;
+		font-family: Garamond;
+		margin-left: -20px;
+	}
+	&:after {
+		content:  close-quote;
+		margin-left: auto;
+		margin-right: -20px;
+	}
+}
+
+	cite {
+		display: flex;
+		text-align: center;
+		font-family: Helvetica;
+		font-size: 1.2rem;
+		font-style: normal;
+		&:after, &:before {
+			content: "";
+			top:14px;
+			position: relative;
+			flex: 1;
+			height:1px;
+			width: auto;
+			max-width:100%;
+			background-color: #fff;
+		}
+		&:after {
+			margin-left: 8px;
+		}
+		&:before {
+			margin-right: 8px;
+		}
+	}

@@ -88,7 +88,7 @@ $parallax-ios         : true !default;
 }
 
 .engagement-slide {
-  background-image: url('/img/wine.jpg');
+  background-image: url('/img/us.jpg');
   background-position: bottom left;
 }
 
@@ -98,7 +98,7 @@ $parallax-ios         : true !default;
 }
 
 .wedding-slide {
-  opacity: 1;
+  opacity: 0.6;
   &:after {
     content: "";
     position:absolute;

@@ -18,16 +18,27 @@
 
 	</head>
 	<body>
-
-	<nav>
-		<a href="#journey">journey</a>
-		<a href="#engagement">engagement</a>
-		<a href="#wedding">wedding</a>
-		<a href="#registry">registry</a>
+<nav id="nav-wrapper">
+	<ul class="nav">
+		<li>
+			<a href="#home">⇧</a>
+		</li>
+		<li>
+			<a href="#journey">journey</a>
+		</li>
+		<li>
+			<a href="#engagement">engagement</a>
+		</li>
+		<li>
+			<a href="#wedding">wedding</a>
+		</li>
+		<li>
+			<a href="#registry">registry</a>
+		</li>
 		<div class="open-nav"></div>
-	</nav>
-
-	<div class="parallax" id="my-container">
+	</ul>
+</nav>
+	<div class="parallax" id="my-container" data-spy="scroll" data-target="#nav-wrapper" data-offset="50">
 
 	  {{ content }}
 
@@ -44,7 +55,7 @@
 	<script src="../_bower_components/jquery.scrollTo/jquery.scrollTo.js"></script>
 	<script src="../_bower_components/jquery.localScroll/jquery.localScroll.js"></script>
 	<script src="../_bower_components/jquery.localScroll/jquery.localScroll.min.js"></script>
-	<script src="../_bower_components/jquery-scrollspy/jquery-scrollspy.js"></script>
+	<script src="../_bower_components/bootstrap/dist/js/bootstrap.js"></script>
 	<!-- endbower -->
 	
 	<!-- build:js(app) /js/scripts.js -->
