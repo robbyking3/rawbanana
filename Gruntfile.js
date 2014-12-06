@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         },
         files: [
           '.jekyll/**/*.html',
-          'css/**/*.css',
+          '.tmp/css/**/*.css',
           '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
           '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
         ]
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
           src: '**/*.{scss,sass}',
-          dest: '<%= yeoman.app %>/css',
+          dest: '.tmp/css',
           ext: '.css'
         }]
       },
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
           src: '**/*.{scss,sass}',
-          dest: '<%= yeoman.app %>/css',
+          dest: '.tmp/css',
           ext: '.css'
         }]
       }
@@ -147,9 +147,9 @@ module.exports = function (grunt) {
       server: {
         files: [{
           expand: true,
-          cwd: '<%= yeoman.app %>/css',
+          cwd: '.tmp/css',
           src: '**/*.css',
-          dest: '<%= yeoman.app %>/css'
+          dest: '.tmp/css'
         }]
       }
     },
@@ -270,17 +270,8 @@ module.exports = function (grunt) {
             // Copy moves asset files and directories.
             'img/**/*',
             'fonts/**/*',
-            'css/**/*',
-            'CNAME',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}',
-            '/_bower_components/jquery/dist/jquery.js',
-            '/_bower_components/qunit/qunit/qunit.js',
-            '/_bower_components/bigtext/dist/bigtext.js',
-            '/_bower_components/scroll-reveal/dist/scrollReveal.js',
-            '/_bower_components/jquery.scrollTo/jquery.scrollTo.js',
-            '/_bower_components/jquery.localScroll/jquery.localScroll.min.js',
-            '/_bower_components/bootstrap/dist/js/bootstrap.js'
+            '!**/_*{,/**}'
             // Explicitly add any files your site needs for distribution here.
             //'_bower_components/jquery/jquery.js',
             //'favicon.ico',
@@ -296,7 +287,7 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '<%= yeoman.app %>/css',
           src: '**/*.css',
-          dest: '<%= yeoman.app %>/css'
+          dest: '.tmp/css'
         }]
       }
     },
