@@ -9,6 +9,8 @@ author:
   name: Rob King
   email: technology@escapecompass.com
 
+baseurl: /
+
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
           '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
