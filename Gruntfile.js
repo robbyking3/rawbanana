@@ -42,7 +42,7 @@ module.exports = function (grunt) {
         },
         files: [
           '.jekyll/**/*.html',
-          '.tmp/css/**/*.css',
+          'css/**/*.css',
           '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
           '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
         ]
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
           src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
+          dest: '<%= yeoman.app %>/css',
           ext: '.css'
         }]
       },
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
           src: '**/*.{scss,sass}',
-          dest: '.tmp/css',
+          dest: '<%= yeoman.app %>/css',
           ext: '.css'
         }]
       }
@@ -147,9 +147,9 @@ module.exports = function (grunt) {
       server: {
         files: [{
           expand: true,
-          cwd: '.tmp/css',
+          cwd: '<%= yeoman.app %>/css',
           src: '**/*.css',
-          dest: '.tmp/css'
+          dest: '<%= yeoman.app %>/css'
         }]
       }
     },
@@ -294,7 +294,7 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '<%= yeoman.app %>/css',
           src: '**/*.css',
-          dest: 'css/css'
+          dest: '<%= yeoman.app %>/css'
         }]
       }
     },
