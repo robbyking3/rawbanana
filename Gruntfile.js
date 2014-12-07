@@ -279,9 +279,16 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
+            '_bower_components/jquery/dist/jquery.js',
+            '_bower_components/qunit/qunit/qunit.js',
+            '_bower_components/bigtext/dist/bigtext.js',
+            '_bower_components/scroll-reveal/dist/scrollReveal.js',
+            '_bower_components/jquery.scrollTo/jquery.scrollTo.js',
+            '_bower_components/jquery.localScroll/jquery.localScroll.js',
+            '_bower_components/jquery.localScroll/jquery.localScroll.min.js',
+            '_bower_components/bootstrap/dist/js/bootstrap.js'
             //'favicon.ico',
             //'apple-touch*.png'
           ],
