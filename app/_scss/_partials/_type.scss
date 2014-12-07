@@ -107,3 +107,11 @@ blockquote {
 			margin-right: 8px;
 		}
 	}
+
+a { 
+	color: $link;
+	text-decoration: none;
+	&:hover {
+		color: $link-hover;
+	}
+}

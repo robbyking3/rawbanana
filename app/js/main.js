@@ -1,6 +1,21 @@
 /*global $:false */
 
 $(function() {
+
+// my crappy modal
+	$('#registry-modal').on('click', function(e) {
+		$('.overlay').show();
+		e.preventDefault();
+	});
+	$('.overlay').on('click', function() {
+		$(this).hide();
+	});
+	$('.modal').on('click', function(e) {
+		e.stopPropagation();
+	});
+// end modal
+
+
 	// Create Sweet Typeography Elements
 	$('.intro-text').bigtext();
 
@@ -23,10 +38,10 @@ $(function() {
 	//change the nav class when in the wedding section
 	$('#nav-wrapper').on('activate.bs.scrollspy', function (e) {
 		var currentSection = e.target.firstElementChild.hash;
-		if (currentSection == "#wedding") {
-			$("ul.nav").addClass("dark");
+		if (currentSection == '#wedding') {
+			$('ul.nav').addClass('dark');
 		} else {
-			$("ul.nav").removeClass("dark");
+			$('ul.nav').removeClass('dark');
 		}
 	});
 
