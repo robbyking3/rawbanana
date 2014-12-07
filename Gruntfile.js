@@ -171,6 +171,14 @@ module.exports = function (grunt) {
         }
       }
     },
+    cdn: {
+      options: {
+        cdn: '/rawbanana/', flatten: true
+      },
+      dist: {
+        src: ['<%= yeoman.dist %>/*.html', '<%= yeoman.dist %>/**/*.css']
+      }
+    },
     jekyll: {
       options: {
         bundleExec: true,
@@ -355,6 +363,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-wiredep');
+  grunt.loadNpmTasks('grunt-cdn');
 
   // Define Tasks
   grunt.registerTask('serve', function (target) {
