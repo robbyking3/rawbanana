@@ -36,11 +36,6 @@ h1 {
 
 }
 
-// .callout-wrap {
-// 	background-color: rgba(#000, 0.6);
-// 	padding: 10px;
-// }
-
 
 .content {
 	font-family: Garamond;
@@ -48,17 +43,33 @@ h1 {
 	font-size: 1.4rem;
 	color: #fff;
 	text-align: left;
-	width:70%;
+	width:96%;
 	line-height: 1.75;
 	p:first-child {
 		margin-top:0;
 	}
 }
 .columns {
-	columns: 2;
-	column-gap: 2.25em;
-}
+		column-width: 90vw;
+		column-gap: 10px;
+		max-width: none;
+		height: 85vh;
+		overflow: auto;
+	}
 
+
+@media screen and (min-width: $screen-md-min) {
+	.columns {
+		column-count: 2;
+		column-width: auto;
+		column-gap: 10px;
+		max-width: none;
+		height: auto;
+	}
+	.content {
+		width:80%;
+	}
+}
 
 //Quotes
 blockquote {

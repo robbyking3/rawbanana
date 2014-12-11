@@ -61,26 +61,4 @@ $(function() {
 
 	window.sr = new scrollReveal( { viewport: document.getElementById('my-container') } );
 
-
-	L.mapbox.accessToken = 'pk.eyJ1Ijoicm9iYnlraW5nMyIsImEiOiJsNkRXdW1NIn0._YffoleW0ZBQP_BAJ59ADg';
-	var map = L.mapbox.map('map', 'robbyking3.k6feo31l');
-
-	// Open popup when user mouses over a marker
-	// map.featureLayer.on('ready', function(e) {
-	// 	var markers = [];
-	// 	this.eachLayer(function(marker) { markers.push(marker); });
-	// 	cycle(markers);
-	// });
-
-	// function cycle(markers) {
-	// 	var i = 0;
-	// 	function run() {
-	// 		if (++i > markers.length - 1) i = 0;
-	// 		map.setView(markers[i].getLatLng(), 12);
-	// 		markers[i].openPopup();
-	// 		window.setTimeout(run, 3000);
-	// 	}
-	// 	run();
-	// }
-
 });

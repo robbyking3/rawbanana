@@ -142,6 +142,7 @@ $m-menu-color-hover: #fff;
 
 
 .btn, button.btn {
+  display: inline-block;
   background-color: $btn-bg;
   color: $btn-color;
   border: $btn-border 2px solid;
