@@ -3,10 +3,12 @@
 $(function() {
 
 // my crappy modal
+
 	$('#registry-modal').on('click', function(e) {
 		$('.overlay').show();
 		e.preventDefault();
 	});
+
 	$('.overlay').on('click', function() {
 		$(this).hide();
 	});

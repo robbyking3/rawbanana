@@ -67,6 +67,9 @@ ul.nav {
     transition: all 0.2s ease-out;
 
     @media screen and (min-width: $screen-md-min) {
+      padding:10px 12px;
+    }
+    @media screen and (min-width: $screen-lg-min) {
       padding:10px 22px;
     }
 

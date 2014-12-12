@@ -47,10 +47,20 @@ $parallax-ios         : true !default;
 
 
 .parallax {
+  @media screen and (min-width: $screen-md-min) {
   perspective: 1px;
+  }
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+
+  background-image: url('/img/roraima.jpg');
+  background-size: cover;
+  background-position: top right;
+  background-attachment: fixed;
+  @media screen and (min-width: $screen-md-min) {
+    background-image: none;
+  }
 }
 .parallax__group {
   position: relative;
@@ -58,12 +68,15 @@ $parallax-ios         : true !default;
   transform-style: preserve-3d;
   // transform: translate3d(700px, 0, -800px) rotateY(30deg); // for debugging
 }
+
+@media screen and (min-width: $screen-md-min) {
 .parallax__layer {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
 }
 .parallax__layer--base {
   top:15%;
@@ -76,28 +89,31 @@ $parallax-ios         : true !default;
 }
 
 // Specifics
+@media screen and (min-width: $screen-md-min) {
 
-.header-slide {
-	background-image: url('/img/holding-hands.jpg');
-  background-position: top left;
-}
+  .header-slide {
+  	background-image: url('/img/holding-hands.jpg');
+    background-position: top left;
+  }
 
-.journey-slide {
-	background-image: url('/img/roraima.jpg');
-  background-position: top right;
-}
+  .journey-slide {
+  	background-image: url('/img/roraima.jpg');
+    background-position: top right;
+  }
 
-.engagement-slide {
-  background-image: url('/img/us.jpg');
-  background-position: bottom left;
-}
+  .engagement-slide {
+    background-image: url('/img/us.jpg');
+    background-position: bottom left;
+  }
 
-.registry-slide {
-  background-image: url('/img/venezuala.jpg');
-  background-position: top left;
-}
+  .registry-slide {
+    background-image: url('/img/venezuala.jpg');
+    background-position: top left;
+  }
 
-.wedding-slide {
- background-image: url('/img/ceremony-map.jpeg');
- background-position: top center;
+  .wedding-slide {
+   background-image: url('/img/ceremony-map.jpeg');
+   background-position: top center;
+  }
+
 }
