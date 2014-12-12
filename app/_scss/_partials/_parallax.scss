@@ -52,7 +52,9 @@ $parallax-ios         : true !default;
   }
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 
   background-image: url('/img/roraima.jpg');
   background-size: cover;
