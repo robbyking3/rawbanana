@@ -20,10 +20,11 @@ h1 {
 
 
 .callout {
-	width: 100%;
+	width: 96%;
 	margin: 0 auto;
 	text-transform: uppercase;
 	color: #fff;
+	padding: 10px;
 }
 
 
@@ -48,6 +49,7 @@ h1 {
 	p:first-child {
 		margin-top:0;
 	}
+	padding: 10px;
 }
 
 @media only screen and (min-width: $screen-md-min) and (-webkit-min-device-pixel-ratio: 1) {

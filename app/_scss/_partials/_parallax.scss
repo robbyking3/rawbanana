@@ -60,6 +60,15 @@ $parallax-ios         : true !default;
   background-size: cover;
   background-position: top right;
   background-attachment: fixed;
+  &:before {
+    content: "";
+    background-color: rgba(0,0,0,0.6);
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+  }
   @media only screen and (min-width: $screen-md-min) {
     background-image: none;
   }
