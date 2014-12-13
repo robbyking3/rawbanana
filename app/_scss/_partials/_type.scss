@@ -27,7 +27,7 @@ h1 {
 }
 
 
-@media screen and (min-width: $screen-md-min) {
+@media only screen and (min-width: $screen-md-min) {
 
 	.callout {
 		width: 50%;
@@ -58,7 +58,7 @@ h1 {
 	}
 
 
-@media screen and (min-width: $screen-md-min) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: $screen-md-min) and (-webkit-min-device-pixel-ratio: 1) {
 	.columns {
 		column-count: 2;
 		column-width: auto;
