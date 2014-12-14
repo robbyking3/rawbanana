@@ -47,7 +47,7 @@ $parallax-ios         : true !default;
 
 
 .parallax {
-  @media only screen and (min-width: $screen-md-min) {
+  @media  (min-width: $screen-md-min) {
   perspective: 1px;
   }
   height: 100vh;
@@ -60,7 +60,7 @@ $parallax-ios         : true !default;
   background-size: cover;
   background-position: top right;
   background-attachment: fixed;
-  @media only screen and (min-width: $screen-md-min) {
+  @media  (min-width: $screen-md-min) {
     background-image: none;
   }
 }
@@ -70,7 +70,7 @@ $parallax-ios         : true !default;
   background-color: rgba(0,0,0,0.6);
 
   
-  @media only screen and (min-width: $screen-md-min) {
+  @media  (min-width: $screen-md-min) {
   background-color: transparent;
   height: 100vh;
   padding-bottom: 0;
@@ -81,7 +81,7 @@ $parallax-ios         : true !default;
 .parallax__layer--base {
   padding-top:65px;
 }
-@media only screen and (min-width: $screen-md-min) {
+@media  (min-width: $screen-md-min) {
   .parallax__layer {
     position: absolute;
     top: 0;
@@ -93,14 +93,10 @@ $parallax-ios         : true !default;
     @include parallax(0.35);
     padding: 30px;
   }
-}
-.parallax__layer--back {
-  background-size: cover;
-  opacity: 0.4;
-}
-
-// Specifics
-@media only screen and (min-width: $screen-md-min) {
+  .parallax__layer--back {
+    background-size: cover;
+    opacity: 0.4;
+  }
 
   .header-slide {
   	background-image: url('/img/holding-hands.jpg');
@@ -126,5 +122,5 @@ $parallax-ios         : true !default;
    background-image: url('/img/ceremony-map.jpeg');
    background-position: top center;
   }
-
+  
 }

@@ -18,7 +18,7 @@ ul.nav {
   transition: transform 0.3s ease-out;
   transform: translateY(calc(-100% + 57px));
 
-  @media only screen and (min-width: $screen-md-min) {
+  @media  (min-width: $screen-md-min) {
     top:40px;
     flex-direction: row;
     transform: translateY(0);
@@ -37,7 +37,7 @@ ul.nav {
     margin:0 0 -2px 0;
     padding: 0;
     white-space: wrap;
-    @media only screen and (min-width: $screen-md-min) {
+    @media (min-width: $screen-md-min) {
       flex: none;
       display: block;
       top: 60px;
@@ -66,10 +66,10 @@ ul.nav {
     letter-spacing: 0.3em;
     transition: all 0.2s ease-out;
 
-    @media only screen and (min-width: $screen-md-min) {
+    @media  (min-width: $screen-md-min) {
       padding:10px 12px;
     }
-    @media only screen and (min-width: $screen-lg-min) {
+    @media  (min-width: $screen-lg-min) {
       padding:10px 22px;
     }
 
@@ -133,7 +133,7 @@ $m-menu-color-hover: #fff;
   }
 }
 
-@media only screen and (min-width: $screen-md-min) {
+@media  (min-width: $screen-md-min) {
   .open-nav {
     display: none;
   }
@@ -145,7 +145,7 @@ $m-menu-color-hover: #fff;
   height:105px;
   display: block;
   margin: 0 auto auto auto; 
-@media only screen and (min-width: $screen-md-min) {
+@media  (min-width: $screen-md-min) {
   width: auto;
   height: auto;
 }
@@ -201,7 +201,7 @@ iframe {
   right:0;
   bottom:0;
   padding: 40px 0 0 0;
-  @media only screen and (min-width: $screen-md-min) {
+  @media  (min-width: $screen-md-min) {
     padding: 50px;
   }
   overflow: hidden;
@@ -234,7 +234,7 @@ iframe {
   margin: auto;
   
   background: #fff;
-  @media only screen and (min-width: $screen-md-min) {
+  @media  (min-width: $screen-md-min) {
     border-radius: 10px;
   }
 
