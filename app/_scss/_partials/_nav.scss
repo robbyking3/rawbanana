@@ -66,10 +66,10 @@ ul.nav {
     letter-spacing: 0.3em;
     transition: all 0.2s ease-out;
 
-    @media  (min-width: $screen-md-min) {
+    @media (min-width: $screen-md-min) {
       padding:10px 12px;
     }
-    @media  (min-width: $screen-lg-min) {
+    @media (min-width: $screen-lg-min) {
       padding:10px 22px;
     }
 
