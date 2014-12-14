@@ -56,19 +56,10 @@ $parallax-ios         : true !default;
   overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 
-  background-image: url('/img/roraima.jpg');
+  background-image: url('/img/roraima-sm.jpg');
   background-size: cover;
   background-position: top right;
   background-attachment: fixed;
-  &:before {
-    content: "";
-    background-color: rgba(0,0,0,0.6);
-    position:absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    width: 100%;
-  }
   @media only screen and (min-width: $screen-md-min) {
     background-image: none;
   }
@@ -76,15 +67,20 @@ $parallax-ios         : true !default;
 .parallax__group {
   position: relative;
   padding-bottom:40px;
+  background-color: rgba(0,0,0,0.6);
+
   
   @media only screen and (min-width: $screen-md-min) {
+  background-color: transparent;
   height: 100vh;
   padding-bottom: 0;
   transform-style: preserve-3d;
   // transform: translate3d(700px, 0, -800px) rotateY(30deg); // for debugging
   }
 }
-
+.parallax__layer--base {
+  padding-top:65px;
+}
 @media only screen and (min-width: $screen-md-min) {
   .parallax__layer {
     position: absolute;
@@ -94,7 +90,6 @@ $parallax-ios         : true !default;
     left: 0;
   }
   .parallax__layer--base {
-    top:15%;
     @include parallax(0.35);
     padding: 30px;
   }

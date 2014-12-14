@@ -140,7 +140,15 @@ $m-menu-color-hover: #fff;
 }
 
 .logo {
+  position: relative;
+  width: 105px;
+  height:105px;
+  display: block;
   margin: 0 auto auto auto; 
+@media only screen and (min-width: $screen-md-min) {
+  width: auto;
+  height: auto;
+}
 }
 
 
