@@ -90,6 +90,7 @@ $parallax-ios         : true !default;
     left: 0;
   }
   .parallax__layer--base {
+    top:13%;
     @include parallax(0.35);
     padding: 30px;
   }
@@ -119,8 +120,8 @@ $parallax-ios         : true !default;
   }
 
   .wedding-slide {
-   background-image: url('/img/ceremony-map.jpeg');
+   background-image: url('/img/ceremony-map.png');
    background-position: top center;
   }
-  
+
 }
