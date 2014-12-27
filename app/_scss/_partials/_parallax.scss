@@ -55,19 +55,13 @@ $parallax-ios         : true !default;
 
   overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
-
-  background-image: url('/img/roraima-sm.jpg');
-  background-size: cover;
-  background-position: top right;
-  background-attachment: fixed;
-  @media  (min-width: $screen-md-min) {
-    background-image: none;
-  }
 }
 .parallax__group {
   position: relative;
   padding-bottom:40px;
   background-color: rgba(0,0,0,0.6);
+  min-height: 100vh;
+  border-bottom: 1px solid rgba(#fff,0.3);
 
   
   @media  (min-width: $screen-md-min) {
@@ -114,14 +108,19 @@ $parallax-ios         : true !default;
     background-position: bottom left;
   }
 
-  .registry-slide {
+  .wedding-slide {
+   background-image: url('/img/ceremony-map.png');
+   background-position: top center;
+  }
+
+  .rsvp-slide {
     background-image: url('/img/venezuala.jpg');
     background-position: top left;
   }
 
-  .wedding-slide {
-   background-image: url('/img/ceremony-map.png');
-   background-position: top center;
+  .registry-slide {
+    background-image: url('/img/motorcycle.jpg');
+    background-position: top left;
   }
 
 }

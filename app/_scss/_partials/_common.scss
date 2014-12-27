@@ -16,7 +16,18 @@ html, body { height: 100%; }
 body {
   background-color: #000;
   font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
   text-align: center;
   overflow: hidden;
+  border-top: 60px #000 solid;
+  @media  (min-width: $screen-md-min) {
+	border-top: none;
+  }
+
+  background-image: url('/img/roraima-sm.jpg');
+  background-size: cover;
+  background-position: 0 60px;
+  background-attachment: fixed;
+  @media  (min-width: $screen-md-min) {
+    background-image: none;
+  }
 }

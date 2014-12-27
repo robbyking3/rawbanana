@@ -17,6 +17,7 @@ $(function() {
 	});
 // end modal
 
+	$("title").text("Rob & Anna");
 
 	// Create Sweet Typeography Elements
 	$('.intro-text').bigtext();

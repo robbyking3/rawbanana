@@ -9,6 +9,20 @@ h1 {
 	color: #fff;
 }
 
+h2 {
+	font-size: 2rem;
+	font-family: Helvetica;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+@media (min-width: $screen-md-min) {
+
+	.hide-lg {
+		display: none;
+	}
+
+}
 .title-heavy {
 	font-family: Helvetica;
 	font-weight: 900;
