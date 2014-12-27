@@ -328,11 +328,13 @@ h2 {
 .content {
   font-family: Garamond;
   margin: auto;
-  font-size: 1.4rem;
-  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 0.08rem;
+  color: #fafafa;
   text-align: left;
   width: 96%;
-  line-height: 1.75;
+  line-height: 1.45;
   padding: 10px; }
   .content p:first-child {
     margin-top: 0; }
@@ -341,7 +343,7 @@ h2 {
   .columns {
     column-count: 2;
     column-width: auto;
-    column-gap: 10px;
+    column-gap: 40px;
     max-width: none;
     height: auto; }
 
@@ -432,7 +434,7 @@ a {
 
   .parallax__layer--back {
     background-size: cover;
-    opacity: 0.4; }
+    opacity: 0.3; }
 
   .header-slide {
     background-image: url("/img/holding-hands.jpg");

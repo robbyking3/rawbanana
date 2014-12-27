@@ -55,11 +55,13 @@ h2 {
 .content {
 	font-family: Garamond;
 	margin:auto;
-	font-size: 1.4rem;
-	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 100;
+	letter-spacing: 0.08rem;
+	color: darken(#fff,2%); 
 	text-align: left;
 	width:96%;
-	line-height: 1.75;
+	line-height: 1.45;
 	p:first-child {
 		margin-top:0;
 	}
@@ -70,7 +72,7 @@ h2 {
 	.columns {
 		column-count: 2;
 		column-width: auto;
-		column-gap: 10px;
+		column-gap: 40px;
 		max-width: none;
 		height: auto;
 	}
