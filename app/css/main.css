@@ -16,9 +16,19 @@ html, body {
 body {
   background-color: #000;
   font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  border-top: 60px #000 solid;
+  background-image: url("/img/roraima-sm.jpg");
+  background-size: cover;
+  background-position: 0 60px;
+  background-attachment: fixed; }
+  @media (min-width: 800px) {
+    body {
+      border-top: none; } }
+  @media (min-width: 800px) {
+    body {
+      background-image: none; } }
 
 .highlight {
   background: #ffffff; }
@@ -287,6 +297,15 @@ h1 {
   font-size: 5rem;
   color: #fff; }
 
+h2 {
+  font-size: 2rem;
+  font-family: Helvetica;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+@media (min-width: 800px) {
+  .hide-lg {
+    display: none; } }
 .title-heavy {
   font-family: Helvetica;
   font-weight: 900; }
@@ -376,22 +395,17 @@ a {
   overflow-x: hidden;
   overflow-y: scroll;
   /* has to be scroll, not auto */
-  -webkit-overflow-scrolling: touch;
-  background-image: url("/img/roraima-sm.jpg");
-  background-size: cover;
-  background-position: top right;
-  background-attachment: fixed; }
+  -webkit-overflow-scrolling: touch; }
   @media (min-width: 800px) {
     .parallax {
       perspective: 1px; } }
-  @media (min-width: 800px) {
-    .parallax {
-      background-image: none; } }
 
 .parallax__group {
   position: relative;
   padding-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
   @media (min-width: 800px) {
     .parallax__group {
       background-color: transparent;
@@ -432,19 +446,24 @@ a {
     background-image: url("/img/us.jpg");
     background-position: bottom left; }
 
-  .registry-slide {
+  .wedding-slide {
+    background-image: url("/img/ceremony-map.png");
+    background-position: top center; }
+
+  .rsvp-slide {
     background-image: url("/img/venezuala.jpg");
     background-position: top left; }
 
-  .wedding-slide {
-    background-image: url("/img/ceremony-map.png");
-    background-position: top center; } }
+  .registry-slide {
+    background-image: url("/img/motorcycle.jpg");
+    background-position: top left; } }
 ul.nav {
   position: fixed;
   padding: 5px 10px;
   margin: 0;
-  left: 20px;
-  right: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 9999;
   display: flex;
   flex-wrap: wrap;
