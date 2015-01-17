@@ -3,7 +3,7 @@
 $(function() {
 
 // my crappy modal
-
+/*
 	$('#registry-modal').on('click', function(e) {
 		$('.overlay').show();
 		e.preventDefault();
@@ -15,6 +15,7 @@ $(function() {
 	$('.modal').on('click', function(e) {
 		e.stopPropagation();
 	});
+*/
 // end modal
 
 	$("title").text("Rob & Anna");
